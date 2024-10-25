@@ -1,0 +1,221 @@
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: none; /* Initially hide all sections */
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Contact Section Styling */
+section#contact {
+    display: flex;
+    flex-direction: column; /* Stack image and content vertically */
+}
+
+/* Styling for Contact Header Image */
+.contact-header {
+    position: relative; /* Positioning for the header */
+    overflow: hidden; /* Prevents image overflow */
+}
+
+.contact-header-image {
+    width: 100%; /* Make the image fill the width of the section */
+    height: 250px; /* Set a fixed height for the banner effect */
+    object-fit: cover; /* Cover the area, maintaining aspect ratio */
+}
+
+/* Contact Form Styling */
+.contact-content {
+    background: linear-gradient(135deg, #ffdad5, #fff7f9); /* Gradient background */
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: -20px; /* Bring form closer to the image */
+}
+
+/* Styling for the 'Get in Touch' Header */
+section#contact h2 {
+    font-weight: 600; /* Boldness */
+    color: #a363aa;   /* Purple color */
+    font-size: 30px;  /* Font size */
+    margin-bottom: 5px; /* Space below the header */
+    text-align: 20px; /* Center the header */
+}
+
+/* Styling for the ruler under the header */
+section#contact .header-ruler {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* Styling for the Contact Section Container */
+.contact-container {
+    display: flex;
+    justify-content: space-evenly; /* Ensure the form and image are spread out */
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+/* Styling for the form on the left */
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-form:focus{
+    border: 2px solid  #ff994f;
+}
+
+.contact-form::placeholder{
+    color: #a9a9a9;
+}
+/* Styling for the image on the right */
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto; /* Adjust image size to fit */
+    border-radius: 10px; /* Optional: adds rounded corners to the image */
+}
+
+/* Styling for the form fields */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align button to the right */
+    width: 100%;
+}
+
+/* Styling for the button */
+form button {
+    display: flex;
+    padding: 10px 30px; /* Adjust padding for button shape */
+    background-color: #8e036e;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+}
+
+.contact-image img{
+
+    width: 500px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+
+/* Styling for Home Section */
+#home {
+    background-color: beige; /* Home section has beige background */
+}
+
+/* Flexbox for Image Container */
+.image-container {
+    display: flex;
+    justify-content: space-around; /* Spaces the images evenly */
+    align-items: center; /* Vertically centers the images */
+}
+
+.image-container img {
+    width: 30%; /* Ensures all images shrink to fit within the page */
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .about-container {
+        flex-direction: column; /* Stack text and image vertically on smaller screens */
+    }
+
+    .about-text, .about-image {
+        width: 100%; /* Full width for both text and image */
+        padding: 0;
+    }
+
+    .about-image img {
+        max-width: 100%; /* Ensure image fits in smaller screen widths */
+    }
+}
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

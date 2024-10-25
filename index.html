@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                section.style.display = "none";
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My DevOps Journey Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('knowledge')">Knowledge</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my website! I am a DevOps engineer dedicated to helping businesses streamline their operations, improve efficiency, and adopt cloud computing strategies. My passion is in delivering cutting-edge solutions tailored to meet the unique needs of every client.</p>
+            <p>I believe in continuous improvement and staying ahead in the rapidly evolving technology space. With a blend of automation, cloud infrastructure, and modern software practices, I ensure businesses achieve agility and scalability in their processes.</p>
+            
+            <hr>
+
+            <!-- Add multiple images here in a row -->
+            <div class="image-container">
+                <img src="Images/Image1.webp" alt="DevOps Engineer Image 1">
+                <img src="Images/Image6.webp" alt="DevOps Engineer Image 4">
+                <img src="Images/Image2.webp" alt="DevOps Engineer Image 2">
+            </div>
+        </section>
+
+        <!-- About Us Section with Image -->
+        <section id="about">
+            <h2>Personal Bio</h2>
+            <div class="about-container">
+                <div class="about-text">                
+                    <hr>
+                    <p>Hi, I am Vera Aidoo, an AWS DevOps Engineer with a background in software development and cloud computing. My journey into tech began at an early age, sparked by a passion for computing that led me to pursue IT courses. After moving to England and taking time to care for my family, I dove deeper into cloud technologies, with a focus on AWS.
+
+                    <p>I have completed several hands-on projects, including building a childrens' service attendance app and deploying AWS cloud infrastructure using tools like CloudFormation. I also bring previous experience as a junior developer at Cotecna (GSL Ghana Ltd), where I contributed to application development and system troubleshooting.</p>
+                        
+                    <p>Currently, I am expanding my expertise through the AWS re/Start program, with a focus on cost optimization, infrastructure as code, and performance improvement in the cloud. I amm passionate about leveraging cloud technology to solve real-world problems and drive efficiency.</p> 
+                    
+                </div>
+                <div class="about-image">
+                    <img src="Images/Image5.jpeg" alt="Moa" style="width:100%; max-width:400px; height:auto;">
+                </div>
+            </div>
+        </section>
+
+        <section id="knowledge">
+            <h2>Things Learnt</h2>
+            <ul>
+                <li>Linux</li>
+                <li>Python</li>
+                <li>Security and Compliance</li>
+                <li>Networking</li>
+                <li>AWS Cloud</li>
+                <li>Ansible</li>
+                <li>Docker</li>
+                <li>Jenkins</li>
+                <li>Git/GitHub</li>
+                <li>Kubernetes</li>
+                <li>Java Script</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <div class="contact-container">
+                <!-- Left side: Form -->
+                <div class="contact-form">
+                    <h2>Get in Touch</h2>
+                    <div class="header-ruler"></div> <!-- Ruler under the header -->
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="298a7dc5-d0e2-45db-a279-4ebf0ec95cfa">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+            
+                        <div class="button-container">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+        
+                <!-- Right side: Image -->
+                <div class="contact-image">
+                    <img src="Images/right_img.png" alt="Contact Us Image">
+                </div>
+            </div>
+        </section>
+        
+        
+    <!-- Footer Section -->
+    <footer>
+        <p>&lt;&lt;&lt;&copy; 2024 Vera Aidoo. All rights reserved&gt;&gt;&gt;</p>
+    </footer>
+
+    <!-- Ensure Home section is shown by default -->
+    <script>
+        showSection('home');
+    </script>
+</body>
+</html>
