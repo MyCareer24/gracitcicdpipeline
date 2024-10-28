@@ -1,0 +1,24 @@
+name: Sync with S3
+on:
+    push:
+        branches:
+            -main #Change this to your main branch name if it's different
+jobs:
+    sysnc:
+        runs-on: ubuntu-latest
+        
+        steps:
+            -name: Checkout Repository
+            uses: actions/Checkout@v2
+            
+            -name: Install AWS CLI
+             run: 
+               sudo apt-get update
+               sudo apt-get install -y awscli
+               
+            -name: Sync with S3
+             env:
+AWS_ACCESS_KEY_ID: ${{ secrets.AKIA6GBME5OC5FCUUZN2}}
+AWS_SECRET_ACCESS_KEY: ${{ secrets.NZFyBZz08EHCxm5uOTIXHxfUOVeYyCRKDAFZ8EfA}}   
+AWS_DEFAULT_REGION: eu-west-2  # Replace with your AWS region        
+              run: |aws s3 sync . s3://graceit.click/
