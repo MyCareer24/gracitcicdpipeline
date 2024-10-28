@@ -24,4 +24,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.NZFyBZz08EHCxm5uOTIXHxfUOVeYyCRKDAFZ8EfA }}
           AWS_DEFAULT_REGION: eu-west-2  # Replace with your AWS region
         run: |
-          aws s3 sync . s3://graceit.click/
+          aws s3 sync . s3://gracit.click/
