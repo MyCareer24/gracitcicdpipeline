@@ -178,7 +178,7 @@ form button:hover {
 
 /* Styling for Home Section */
 #home {
-    background-color: green; /* Home section has beige background */
+    background-color: rgb(199, 239, 199); /* Home section has beige background */
 }
 
 /* Flexbox for Image Container */
