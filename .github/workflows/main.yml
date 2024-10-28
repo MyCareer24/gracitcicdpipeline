@@ -20,8 +20,8 @@ jobs:
 
       - name: Sync with S3
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AKIA6GBME5OC66PVOAET }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.noooKvPlDAeWSi5QBmV5t6lweHOgy7Z0+gJE2ibm }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AKIA6GBME5OC5FCUUZN2 }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.NZFyBZz08EHCxm5uOTIXHxfUOVeYyCRKDAFZ8EfA }}
           AWS_DEFAULT_REGION: eu-west-2  # Replace with your AWS region
         run: |
           aws s3 sync . s3://gracit.click/
